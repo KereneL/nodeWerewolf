@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Werewolf</title>
+    <link rel="icon" type="image/png" href="/images/icon.png">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <div id="connecting">
+        <h2>connecting to server...</h2>
+    </div>
+    <div id="login-form" class="stroked form centered">
+        <div class="stroked">
+            <input value="" placeholder="Enter your name" id="username-input" autocomplete="false">
+        </div>
+
+        <div id="login-form-choice" class="row">
+            <div class="stroked column">
+                <div class="row">
+                    <input value="" placeholder="and a room code" id="room-input" autocomplete="false">
+                </div>
+                <div class="row">
+                    <input type="button" value="to Join" id="join-button">
+                </div>
+            </div>
+
+            <div class="stroked column">
+                <div class="column">
+                <input type="button" value="or Start a new" id="create-button"> game room!
+            </div>
+            </div>
+        </div>
+    </div>
+    <div id="room-info" class="stroked form centered">
+        <h2>Room <span id="room-txt"></span></h2>
+        <h3>Playing: <span id="game-txt">Werewolf</span></h2>
+            <h4> Participants:</h4>
+            <ol id="participants-list">
+
+            </ol>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

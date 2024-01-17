@@ -1,0 +1,53 @@
+html, body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+hr{
+    padding: 0;
+    margin: 0;
+    margin-bottom: 25px;
+}
+.form{
+    max-width: 392px;
+    min-height: 150px;
+    padding: 15px;
+    margin: auto;
+}
+.centered{
+    margin-top: 248px;
+    text-align: center;
+}
+.stroked{
+    border: 1px solid black;
+}
+#login-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#login-form div:first-child {
+    padding: 5px;
+    margin: 5px;
+}
+#login-form-choice div {
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    flex: 1 1 0;
+    justify-content: space-between;
+}
+#login-form .row {
+    flex-direction: row;
+}
+#login-form .column {
+    flex-direction: column;
+}
+#login-form-choice{
+    display: flex;
+    flex-direction: row;
+}
+#room-txt{
+    color: red;
+}
+#game-txt{
+    color: blue;
+}
